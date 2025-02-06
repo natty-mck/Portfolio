@@ -117,3 +117,39 @@ function toContactPage() {
     document.getElementById("contact-icon").src = "assets/contact-icon selected.png";
     currentpage = 3;
 }
+
+
+
+
+//projects slider
+let slider1 = document.getElementById("slide1");
+let slider2 = document.getElementById("slide2");
+let slider3 = document.getElementById("slide3");
+
+let img = document.getElementById("imgRotation");
+
+slider1.style.backgroundColor = "#292121";
+
+function resetbackgrounds() {
+    slider1.style.backgroundColor = "grey";
+    slider2.style.backgroundColor = "grey";
+    slider3.style.backgroundColor = "grey";
+}
+
+slider1.addEventListener('click', function() {
+     img.src = "assets/project1.png";
+     resetbackgrounds()
+     slider1.style.backgroundColor = "#292121"; 
+});
+
+slider2.addEventListener('click', function() {
+    img.src = "assets/project1.png"; //CHANGE
+    resetbackgrounds()
+    slider2.style.backgroundColor = "#292121"; 
+});
+
+slider3.addEventListener('click', function() {
+    img.src = "assets/project1.png"; //CHANGE
+    resetbackgrounds()
+    slider3.style.backgroundColor = "#292121"; 
+});

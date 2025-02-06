@@ -159,3 +159,45 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 10px;
 }
+
+#imgRotation-container {
+    position: relative;
+    height: 500px;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+}
+
+#imgRotation {
+    height: 100%;
+    border-radius: 20px;
+}
+
+#image-slider{
+    position: relative;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 20px;
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    width: 50px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider:hover {
+    cursor: pointer;
+}
