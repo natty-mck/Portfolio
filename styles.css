@@ -4,6 +4,8 @@ body {
     margin: 0px;
     overflow: hidden;
     user-select: none;
+    width: 100%;
+    padding: 0;
 }
 
 .mainSection {
@@ -20,7 +22,7 @@ body {
 #sidebar {
     position: fixed;
     background-color: #0E0E0E;
-    max-width: 120px;
+    width: 105px;
     top: 0%;
     left: 0px;
     height: 100vh;
@@ -69,7 +71,7 @@ body {
     left: 300px;
     top: 30%;
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
     font-family: jetBrains;
     border-right: 2px solid white; 
     max-width: 400px;
@@ -80,7 +82,7 @@ body {
     left: 300px;
     top: 40%;
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
     font-family: jetBrains;
     max-width: 40vw;
     width: max-content;
@@ -139,8 +141,8 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    height: 150px;
-    max-width: 240px;
+    height: 140px;
+    max-width: 230px;
     margin-left: 20px;
     margin-right: 20px;
 }
