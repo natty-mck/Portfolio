@@ -11,7 +11,6 @@ body {
     background-image: url(assets/background.jpg) !important;background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(to top right,#7C7575,  #0C0C0C 15%, #090909 20%, #171414 60%,  #7C7575 85%, #7C7575 100%);
     float: right;
     width: 100VW;
     height: 100vh;
@@ -70,21 +69,22 @@ body {
     left: 300px;
     top: 30%;
     color: white;
-    font-size: larger;
+    font-size: xx-large;
     font-family: jetBrains;
     border-right: 2px solid white; 
-    font-size: x-large;
+    max-width: 400px;
 }
 
-#welcomePar{
+#welcomePar {
     position: absolute;
     left: 300px;
     top: 40%;
     color: white;
-    font-size: larger;
+    font-size: xx-large;
     font-family: jetBrains;
-    border-right: 2px solid white; 
-    font-size: x-large;
+    max-width: 40vw;
+    width: max-content;
+    display: none;
 }
 
 #doctext {
@@ -112,4 +112,21 @@ body {
     top: 100px;
     transform: translateX(-50%);
     color: white;
+}
+
+#keySkills-container {
+    position: relative;
+    left: 50%;
+    top: 80%;
+    text-align: center;
+    font-family: jetBrains;
+    color: white;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background:rgba(76, 76, 76, 0.4);
+    border-radius: 12px;
+}
+
+.skills {
+    max-height: 150px;
 }

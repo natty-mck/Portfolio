@@ -3,51 +3,29 @@ document.body.style.overflow = "hidden";
 //greeting text typing code
 async function greeting() {
     document.getElementById("mainSection").scrollIntoView({ behavior: 'smooth' });
-    let phrase = "/Welcome...";
+    let phrase = "/Welcome()";
     let greeting = document.getElementById("welcomeText");
     let i = 0;
 
     function type() {
         return new Promise((resolve) => {
             if (i < phrase.length) {
-                greeting.innerHTML += phrase[i];
+                greeting.innerText += phrase[i];
                 i++;
                 setTimeout(() => {
                     type().then(resolve);
-                }, Math.floor(Math.random() * 200) + 1);
+                }, Math.floor(Math.random() * 400) + 1);
             }
             else {
                 resolve();
             }
         })
     }
-    
-    function typeAboutMe() {
-        return new Promise((resolve) => {
-            if (i < phrase.length) {
-                if (phrase[i-1] == ">") {
-                    greeting.innerHTML += '<br>';
-                    greeting.style.borderRightWidth = "0px";
-                    greeting = document.getElementById("welcomePar");
-                }
-                greeting.innerHTML += phrase[i];
-
-                i++;
-                setTimeout(() => {
-                    typeAboutMe().then(resolve);
-                }, Math.floor(Math.random() * 200) + 1);
-            }
-            else {
-                resolve();
-            }
-        })
-    }
-    
     
     await type();
-    i= 0;
-    phrase = "<br> Hello, I am a west suffolk college student.";
-    await typeAboutMe()
+    document.getElementById("welcomePar").style.display = "block";
+  
+
 }
 
 console.log("Everything is in it's right place.")
