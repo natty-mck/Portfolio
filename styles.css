@@ -8,6 +8,7 @@ body {
     padding: 0;
 }
 
+/*greetings page*/
 .mainSection {
     position: relative;
     background-image: url(assets/background.jpg) !important;background-repeat: no-repeat;
@@ -100,8 +101,8 @@ body {
 
 #greeting-img {
     position: absolute;
-    left: 70%;
-    top: 45%;
+    left: 75%;
+    top: 40%;
     transform: translate(-50%, -50%);
     width: 20%;
 
@@ -124,7 +125,7 @@ body {
     font-family: jetBrains;
     color: white;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 60%;
     background:rgba(76, 76, 76, 0.4);
     border-radius: 12px;
 }
@@ -145,4 +146,16 @@ body {
     max-width: 230px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+/*projects page*/
+#projects-container {
+    position: relative;
+    background:rgba(76, 76, 76, 0.4);
+    width: 70vw;
+    height: 60vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
