@@ -164,9 +164,21 @@ body {
     position: relative;
     height: 500px;
     left: 50%;
+    top: 10%;
     width: max-content;
     transform: translateX(-50%);
 }
+
+#projectDesc {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 75%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+}
+
 
 #imgRotation {
     height: 100%;
