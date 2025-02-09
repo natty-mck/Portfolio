@@ -239,3 +239,86 @@ body {
 .slider:hover {
     cursor: pointer;
 }
+
+/*contact page*/
+#form-container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background:rgba(76, 76, 76, 0.4);
+    border-radius: 10px;
+}
+
+#contact-form {
+    position: relative;
+    width: max-content;
+    height: 80%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-label {
+    position: relative;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+.form-input {
+    width: 50vw;
+    max-width: 350px;
+    padding: 6px;
+    outline: 0px;
+    font-size: large;
+    background:rgba(76, 76, 76, 0);
+    border: 0px;
+    color: whitesmoke;
+    border-bottom: #14630a 2px solid;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-input:focus {
+    border-bottom: #1bf804 2px solid;
+}
+
+.form-textarea {
+    width: 50vw;
+    height: 100px;
+    background:rgba(76, 76, 76, 0);
+    max-width: 350px;
+    max-height: 30vh;
+    padding: 6px;
+    outline: 0px;
+    border: 0px;
+    color: whitesmoke;
+    border-bottom: #14630a 2px solid;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-textarea:focus {
+    border-bottom: #1bf804 2px solid;
+}
+
+.form-button {
+    position: relative;
+    background-color: #14630a;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    background-color: #1bf804;
+}
