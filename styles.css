@@ -126,7 +126,7 @@ body {
 #greeting-img {
     position: absolute;
     left: 75%;
-    top: 40%;
+    top: 35%;
     transform: translate(-50%, -50%);
     width: 20%;
     border-radius: 90pc;
@@ -198,22 +198,37 @@ body {
 #projectDesc {
     position: absolute;
     text-align: center;
-    top: 20%;
-    left: 75%;
-    width: 200px;
-    height: 200px;
-    border: 1px solid white;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    max-height: 200px;
+    height: max-content;
+    color: whitesmoke;
 }
 
+.info-slide {
+    animation: slidein;
+    animation-duration: 2s;
+}
+
+@keyframes slidein {
+    0%   {left: 100vw;opacity: 0%;}
+    100% {opacity: 100%;}
+  }
 
 #imgRotation {
-    height: 100%;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
     border-radius: 20px;
 }
 
 #image-slider{
     position: relative;
-    top: -4px;
+    top: -10%;
     left: 50%;
     transform: translateX(-50%);
     height: 20px;
@@ -239,6 +254,7 @@ body {
 .slider:hover {
     cursor: pointer;
 }
+
 
 /*contact page*/
 #form-container {

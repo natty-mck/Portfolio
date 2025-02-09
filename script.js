@@ -53,6 +53,7 @@ async function nextpage() {
             switch (currentpage) {
             case 1:
                 document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("projectDesc").classList.add("info-slide");
                 document.getElementById("home-icon").src = "assets/home-icon.png"
                 document.getElementById("projects-icon").src = "assets/project-icon selected.png"
                 currentpage = 2;
@@ -85,6 +86,7 @@ async function lastpage() {
                 break;
             case 3:
                 document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("projectDesc").classList.add("info-slide");
                 document.getElementById("projects-icon").src = "assets/project-icon selected.png"
                 document.getElementById("contact-icon").src = "assets/contact-icon.png";
                 currentpage = 2;
@@ -106,6 +108,7 @@ function toHomepage() {
 }
 function toProjectspage() {
     document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("projectDesc").classList.add("info-slide");
     document.getElementById("projects-icon").src = "assets/project-icon selected.png"
     document.getElementById("contact-icon").src = "assets/contact-icon.png";
     document.getElementById("home-icon").src = "assets/home-icon.png";
@@ -138,9 +141,9 @@ function resetbackgrounds() {
 }
 
 slider1.addEventListener('click', function() {
-     img.src = "assets/project1.png";
-     resetbackgrounds()
-     slider1.style.backgroundColor = "#292121"; 
+    img.src = "assets/project1.png";
+    resetbackgrounds()
+    slider1.style.backgroundColor = "#292121";
 });
 
 slider2.addEventListener('click', function() {
