@@ -3,18 +3,18 @@ document.body.style.overflow = "hidden";
 //greeting text typing code
 async function greeting() {
     document.getElementById("mainSection").scrollIntoView({ behavior: 'smooth' });
-    let phrase = "/Welcome()";
+    let phrase = "/Digital Solutions";
     let greeting = document.getElementById("welcomeText");
     let i = 0;
 
     function type() {
         return new Promise((resolve) => {
             if (i < phrase.length) {
-                greeting.innerText += phrase[i];
+                greeting.innerHTML += phrase[i];
                 i++;
                 setTimeout(() => {
                     type().then(resolve);
-                }, Math.floor(Math.random() * 400) + 1);
+                }, Math.floor(Math.random() * 200) + 1);
             }
             else {
                 resolve();
@@ -24,6 +24,7 @@ async function greeting() {
     
     await type();
     document.getElementById("welcomePar").style.display = "block";
+    document.getElementById("welcomeGIT-button").style.display = "block";
   
 
 }

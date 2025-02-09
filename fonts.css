@@ -2,3 +2,8 @@
   font-family: jetBrains;
   src: url(fonts/JetBrainsMonoNL-Medium.ttf);
 }
+
+@font-face {
+  font-family: cleanFont;
+  src: url(fonts/Neoteric-32A8.ttf);
+}
