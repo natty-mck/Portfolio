@@ -211,8 +211,12 @@ body {
 }
 
 #imgRotation-container {
+    background:rgba(76, 76, 76, 0.5);
     position: relative;
-    height: 500px;
+    height: 400px;
+    max-height: max-content;
+    padding: 20px;
+    border-radius: 10px;
     left: 50%;
     top: 10%;
     width: max-content;
@@ -239,11 +243,28 @@ body {
 @keyframes slidein {
     0%   {left: 100vw;opacity: 0%;}
     100% {opacity: 100%;}
-  }
+}
+
+#projectScreenshot {
+    position: absolute;
+    left: 20%;
+    width: 25%;
+    height: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px whitesmoke solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#screenshot-image {
+    position: relative;
+    max-height: 80%;
+}
 
 #imgRotation {
     position: relative;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 70%;
