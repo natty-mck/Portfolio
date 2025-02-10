@@ -252,6 +252,7 @@ body {
     height: 80%;
     top: 50%;
     transform: translate(-50%, -50%);
+    background:rgba(221, 216, 216, 0.5);
     border: 2px whitesmoke solid;
     border-radius: 5px;
     text-align: center;
@@ -260,6 +261,7 @@ body {
 #screenshot-image {
     position: relative;
     max-height: 80%;
+    max-width: 100%;
 }
 
 #imgRotation {
