@@ -157,3 +157,31 @@ slider3.addEventListener('click', function() {
     resetbackgrounds()
     slider3.style.backgroundColor = "#292121"; 
 });
+
+
+function validateForm() {
+    let form = document.getElementById("contact-form");
+    let enteredEmail = document.getElementById("email").value;
+    let formAction = "https://docs.google.com/forms/u/1/d/1lU8c2CNEOy0NoTx6yQyDVx8a7h_I6C1R-eWBbNLrnkw/formResponse";
+    
+    if (enteredEmail.substring(enteredEmail.length, enteredEmail.length - 4) === ".com") {
+        form.action = formAction; 
+        return true;
+    }
+    else if (enteredEmail.substring(enteredEmail.length, enteredEmail.length - 6) === ".co.uk"){
+        form.action = formAction; 
+        return true;
+    }
+    else if (enteredEmail.substring(enteredEmail.length, enteredEmail.length - 4) === ".org"){
+        form.action = formAction; 
+        return true;
+    }
+    else if (enteredEmail[0] == "."){
+        alert("Invalid email");
+        return false;
+    }
+    else {
+        alert("Invalid email");
+        return false;
+    }
+}
