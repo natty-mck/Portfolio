@@ -110,7 +110,7 @@ body {
     color: white;
     font-size: x-large;
     font-family: jetBrains;
-    max-width: 35vw;
+    max-width: 38vw;
     width: max-content;
     display: none;
 }
@@ -244,6 +244,7 @@ body {
     max-height: 200px;
     height: max-content;
     color: whitesmoke;
+    font-size: large;
 }
 
 .info-slide {
