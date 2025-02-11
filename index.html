@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="fonts" href="fonts.css">
-    <link rel="stylesheet" href="styles.css">
+    <link id="stylesheet" rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="assets/portfolio icon.ico">
 </head>
 <body>
     <section id="sidebar">
         <div id="logo-container" onclick="nextpage()">
-            <h2 style="position: relative;scale: 80%;left: -5px;"> @Nathan_ <br> McKenzie </h2>
+            <h2 id="sidebar-text"> @Nathan_ <br> McKenzie </h2>
         </div>
         <nav id="nav-container">
             <img onclick="toHomepage()" id="home-icon" title="home page" class="nav-icons" src="assets/home-icon selected.png" draggable="false"></img>
@@ -28,18 +28,17 @@
     <!--Main Page-->
     <section id="mainPage">
         <section class="mainSection" id="mainSection">
-            <span id="welcomeText">
-            </span>
-            <span id="welcomePar">
-                Hi, I'm Nathan, a student software developer with a passion for creating innovative applications. I'm always on the lookout for my next exciting project. If you have any queries please feel free to get in touch.
-            </span>
-            <button onclick="toContactPage()" id="welcomeGIT-button">Get in Touch</button>
-
-            <div id="binary">
+            <div id="greeting-container">
+               
+                    <span id="welcomeText">
+                    </span>
+                    <span id="welcomePar">
+                        Hi, I'm Nathan, a student software developer with a passion for creating innovative applications. I'm always on the lookout for my next exciting project. If you have any queries please feel free to get in touch.
+                    </span>
+                    <button onclick="toContactPage()" id="welcomeGIT-button">Get in Touch</button>
             </div>
-
             <img id="greeting-img" src="branding/logo v2.svg">
-
+                
             
 
             <div id="keySkills-container">
@@ -120,5 +119,10 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+        //redirect to mobile site if needed
+        if (screen.width <= 1075) { document.getElementById('stylesheet').href = 'styles-mobile.css'; }
+    </script>
+    
 </body>
 </html>
