@@ -1,5 +1,7 @@
 var currentpage = 1;
 document.body.style.overflow = "hidden";
+
+
 //greeting text typing code
 async function greeting() {
     document.getElementById("mainSection").scrollIntoView({ behavior: 'smooth' });
@@ -25,8 +27,6 @@ async function greeting() {
     await type();
     document.getElementById("welcomePar").style.display = "block";
     document.getElementById("welcomeGIT-button").style.display = "block";
-  
-
 }
 
 console.log("Everything is in it's right place.")
@@ -52,17 +52,23 @@ async function nextpage() {
         return new Promise((resolve) => {
             switch (currentpage) {
             case 1:
-                document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
-                document.getElementById("projectDesc").classList.add("info-slide");
+                document.getElementById("aboutMe-mainSection").scrollIntoView({ behavior: 'smooth' });
                 document.getElementById("home-icon").src = "assets/home-icon.png"
-                document.getElementById("projects-icon").src = "assets/project-icon selected.png"
+                document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon selected.png"
                 currentpage = 2;
                 break;
             case 2:
+                document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("projectDesc").classList.add("info-slide");
+                document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon.png"
+                document.getElementById("projects-icon").src = "assets/project-icon selected.png"
+                currentpage = 3;
+                break;
+            case 3:
                 document.getElementById("contactPage-mainSection").scrollIntoView({ behavior: 'smooth' });
                 document.getElementById("projects-icon").src = "assets/project-icon.png";
                 document.getElementById("contact-icon").src = "assets/contact-icon selected.png";
-                currentpage = 3;
+                currentpage = 4;
                 break;
             }
             resolve()
@@ -81,16 +87,23 @@ async function lastpage() {
             case 2:
                 document.getElementById("mainSection").scrollIntoView({ behavior: 'smooth' });
                 document.getElementById("home-icon").src = "assets/home-icon selected.png"
-                document.getElementById("projects-icon").src = "assets/project-icon.png"
+                document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon.png"
                 currentpage = 1;
                 break;
             case 3:
+                document.getElementById("aboutMe-mainSection").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon selected.png"
+                document.getElementById("projects-icon").src = "assets/project-icon.png";
+                currentpage = 2;
+                break;
+            case 4:
                 document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
                 document.getElementById("projectDesc").classList.add("info-slide");
                 document.getElementById("projects-icon").src = "assets/project-icon selected.png"
                 document.getElementById("contact-icon").src = "assets/contact-icon.png";
-                currentpage = 2;
-            break;            }
+                currentpage = 3;
+                break;        
+            }
             resolve()
         })
     }
@@ -102,24 +115,34 @@ async function lastpage() {
 function toHomepage() {
     document.getElementById("mainSection").scrollIntoView({ behavior: 'smooth' });
     document.getElementById("home-icon").src = "assets/home-icon selected.png";
+    document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon.png"
     document.getElementById("projects-icon").src = "assets/project-icon.png";
     document.getElementById("contact-icon").src = "assets/contact-icon.png";
     currentpage = 1;
 }
-function toProjectspage() {
-    document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
-    document.getElementById("projectDesc").classList.add("info-slide");
-    document.getElementById("projects-icon").src = "assets/project-icon selected.png"
+function toAboutMePage() {
+    document.getElementById("aboutMe-mainSection").scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon selected.png"
     document.getElementById("contact-icon").src = "assets/contact-icon.png";
     document.getElementById("home-icon").src = "assets/home-icon.png";
     currentpage = 2;
 }
+function toProjectspage() {
+    document.getElementById("projectsPage-mainSection").scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("projectDesc").classList.add("info-slide");
+    document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon.png"
+    document.getElementById("projects-icon").src = "assets/project-icon selected.png"
+    document.getElementById("contact-icon").src = "assets/contact-icon.png";
+    document.getElementById("home-icon").src = "assets/home-icon.png";
+    currentpage = 3;
+}
 function toContactPage() {
     document.getElementById("contactPage-mainSection").scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("aboutMe-icon").src = "assets/aboutMe-icon.png"
     document.getElementById("projects-icon").src = "assets/project-icon.png";
     document.getElementById("home-icon").src = "assets/home-icon.png";
     document.getElementById("contact-icon").src = "assets/contact-icon selected.png";
-    currentpage = 3;
+    currentpage = 4;
 }
 
 
